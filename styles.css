@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #1e90ff;
+  font-weight: 600;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  width: 48%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #1e90ff;
+  outline: none;
+}
+
+#loading-indicator {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  color: red;
+  background-color: #ffcccc;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  background-color: white;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.user-list li:hover {
+  transform: translateY(-5px);
+}
+
+.user-list li p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.user-list li .name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.user-list li .city {
+  font-size: 1rem;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #loading-indicator {
+    font-size: 1rem;
+  }
+
+  .user-list li {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .filters input,
+  .filters select {
+    font-size: 0.9rem;
+  }
+
+  .user-list li {
+    padding: 8px;
+  }
+}
