@@ -14,7 +14,7 @@ Este é um projeto que exibe uma lista de usuários com funcionalidades de busca
 ## Instruções de Execução
 
 1. **Baixe o repositório**
-2. **Vá a pasta e procure o arquivo.html**
+2. **Vá a pasta e procure o arquivo index.html**
 3. **Abra o arquivo index.html no seu navegador**
 
 - **Você pode abrir diretamente o arquivo index.html no seu navegador para visualizar a aplicação.**
